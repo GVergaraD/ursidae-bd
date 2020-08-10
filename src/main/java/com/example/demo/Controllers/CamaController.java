@@ -58,6 +58,8 @@ public class CamaController {
 	public Cama updateCama(@PathVariable Long id, @RequestBody Cama cama) {
 		Cama c = getCama(id);
 		c.setEstado(cama.getEstado());
+		c.setNombre(cama.getNombre());
+		c.setSala(cama.getSala());
 		return camaService.saveOrUpdateCama(c);
 
 	}

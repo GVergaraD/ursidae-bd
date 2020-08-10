@@ -19,7 +19,7 @@ public class Cama {
     @Column(name = "nombre_paciente")
     private String nombre;
 
-    @Column(name = "nombre_paciente")
+    @Column(name = "nombre_sala")
     private Integer sala;
 
     public Long getId() {

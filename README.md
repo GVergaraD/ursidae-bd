@@ -1,1 +1,3 @@
-# ursidae-bd
+# IngenieriadeSoftware
+Proyecto del semestre
+### Grupo Ursidae

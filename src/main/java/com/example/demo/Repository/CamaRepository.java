@@ -17,4 +17,5 @@ public interface CamaRepository extends CrudRepository<Cama, Long>{
 	public List<Cama> findAll();
 
 	public List<Cama> findByEstado(String estado);//para filtrar por estado
+	public List<Cama> findBySala(Integer sala);//para filtrar por estado
 }

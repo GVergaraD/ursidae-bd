@@ -39,6 +39,19 @@ public class CamaController {
 		}
 
 	}
+	@GetMapping("")
+	@ResponseBody
+	public Iterable<Cama> getCama(@RequestParam(required = false) @Validated Integer sala) {
+		if (sala == null) {
+			return camaService.listAll();
+		} else {
+			return camaService.getCama(sala);
+		}
+
+	}
+
+
+
 
 	@PostMapping("/{id}")
 	public ResponseEntity<Cama> updatecama(@PathVariable("id") Long id, @RequestBody Cama Cama) {

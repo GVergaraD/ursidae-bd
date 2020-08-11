@@ -49,4 +49,8 @@ public class CamaService {
 	public List<Cama> getCama(String estado) {
 		return camaRepository.findByEstado(estado);
 	}
+	public List<Cama> getCama(Integer sala) {
+		return camaRepository.findBySala(sala);
+	}
+
 }

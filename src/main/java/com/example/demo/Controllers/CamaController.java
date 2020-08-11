@@ -39,7 +39,7 @@ public class CamaController {
 		}
 
 	}
-	@GetMapping("")
+	@GetMapping("/salas")
 	@ResponseBody
 	public Iterable<Cama> getCama(@RequestParam(required = false) @Validated Integer sala) {
 		if (sala == null) {
